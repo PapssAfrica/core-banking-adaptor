@@ -1,0 +1,1 @@
+.\jdk-21.0.2\bin\java -jar core-banking-adaptor-zbbank-0.0.1-SNAPSHOT.jar -XX:MaxPermSize=512M -Xms1024M -Xmx1024M -Xss64M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled --spring.config.location=application-sit.yml

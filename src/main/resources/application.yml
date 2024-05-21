@@ -1,0 +1,39 @@
+
+core:
+  banking:
+    api:
+      coreBankingUrl: ""
+      username: 
+      password:  #encryrpt this for prod
+      integrated: false
+      
+springdoc:
+  swagger-ui.path: /swagger-ui 
+  
+  
+privateKeyType: PKCS12
+privateKeyStoreFile: /var/papss/cert/keystore.p12
+privateKeyAlias: client2KeyPair
+privateKeyPassword: client2Pass
+
+papssPublicKeyType: PKCS12
+papssPublicStoreFile: /var/papss/cert/papss-portal-backend_public_keystore.p12
+papssPublicAlias: client2KeyPair
+papssPublicPassword: client2Pass
+
+papss:
+    participants:
+    -   apiKey: 
+        country: ZW
+        inst_bic: PWSBZWHX
+        inst_id: ZW1008
+        salt: 
+        sslKeyAlias: 
+        keyStorePath: /var/papss/cert/client.jks
+        keyPass: secure
+        keyStoreType: JKS
+        provider: SunJCE
+    
+logging:
+  level:
+    za.co.quadrantsystems: INFO  

@@ -1,0 +1,1 @@
+java -jar core-banking-adaptor-nbs-0.0.1-SNAPSHOT.jar -XX:MaxPermSize=512M -Xms2048M -Xmx2048M -Xss64M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled --spring.config.location=application-sit.yml
